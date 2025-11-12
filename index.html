@@ -3,55 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mango Messages</title>
+  <title>Mango Messages | Trusted Email Delivery</title>
   <style>
+    :root {
+      --primary: #ffb300;
+      --secondary: #f57c00;
+      --text: #333;
+      --bg: #fffdf8;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      color: #333;
-      text-align: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     header {
-      background: #ffa726;
-      color: white;
-      padding: 1.5rem 0;
-    }
-    main {
-      margin-top: 2rem;
-      padding: 1rem;
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h1 {
-      color: #f57c00;
+      margin: 0;
+      font-size: 2rem;
+    }
+    h2 {
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    p {
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-top: 1.5rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      background: var(--secondary);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #e66b00;
     }
     footer {
       margin-top: 3rem;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #777;
+      background: #fafafa;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mango Messages</h1>
-    <p>Your trusted email delivery platform</p>
+    <h1>🥭 Mango Messages</h1>
+    <p>Your trusted partner for reliable email delivery</p>
   </header>
 
   <main>
     <h2>About Us</h2>
     <p>
-      Mango Messages provides professional and reliable email delivery solutions for
-      businesses and organizations. We help ensure your messages reach your audience securely and efficiently.
+      Mango Messages helps businesses deliver important transactional and marketing emails
+      with high reliability and deliverability rates.  
+      We focus on simplicity, performance, and trust.
     </p>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:admin@mangomessages.com">admin@mangomessages.com</a></p>
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you! We will reach out soon.');">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="John Doe" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
-    &copy; 2025 Mango Messages. All rights reserved.
+    &copy; 2025 Mango Messages. All rights reserved.  
+    <br />Email: <a href="mailto:admin@mangomessages.com">admin@mangomessages.com</a>
   </footer>
 </body>
 </html>
